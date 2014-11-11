@@ -1,0 +1,141 @@
+Process:               ps [8443]
+Path:                  /Applications/MampStack.app/Contents/Resources/app/common/bin/ps
+Identifier:            ps
+Version:               ???
+Code Type:             X86 (Native)
+Parent Process:        sh [8439]
+Responsible:           BitNamiApp [7902]
+User ID:               501
+
+Date/Time:             2014-11-06 22:43:20.643 +0700
+OS Version:            Mac OS X 10.10 (14A389)
+Report Version:        11
+Anonymous UUID:        6817F334-B357-204A-B7C1-42BC8F205F02
+
+Sleep/Wake UUID:       E4161AE1-8055-4FB2-B58C-37F7B104D4D9
+
+Time Awake Since Boot: 35000 seconds
+Time Since Wake:       10000 seconds
+
+Crashed Thread:        0  Dispatch queue: com.apple.main-thread
+
+Exception Type:        EXC_BAD_ACCESS (SIGSEGV)
+Exception Codes:       KERN_INVALID_ADDRESS at 0x00000000612fe674
+
+VM Regions Near 0x612fe674:
+    MALLOC_SMALL           0000000000800000-0000000001800000 [ 16.0M] rw-/rwx SM=PRV  
+--> 
+    __TEXT                 000000008fe29000-000000008fe5d000 [  208K] r-x/rwx SM=COW  /usr/lib/dyld
+
+Thread 0 Crashed:: Dispatch queue: com.apple.main-thread
+0   ps                            	0x00002275 state + 75
+1   ps                            	0x00004fb1 main + 4455
+2   ps                            	0x0000164e start + 54
+
+Thread 0 crashed with X86 Thread State (32-bit):
+  eax: 0x612f7365  ebx: 0x0000223b  ecx: 0x01001200  edx: 0x0000730f
+  edi: 0x00006c80  esi: 0x00004004  ebp: 0xbffff188  esp: 0xbffff150
+   ss: 0x00000023  efl: 0x00010293  eip: 0x00002275   cs: 0x0000001b
+   ds: 0x00000023   es: 0x00000023   fs: 0x00000000   gs: 0x0000000f
+  cr2: 0x612fe674
+  
+Logical CPU:     0
+Error Code:      0x00000004
+Trap Number:     14
+
+
+Binary Images:
+    0x1000 -     0x5ff7 +ps (???) /Applications/MampStack.app/Contents/Resources/app/common/bin/ps
+0x8fe29000 - 0x8fe5ce03  dyld (353.2.1) <EBFF7998-58E8-32F5-BF0D-9690278EC792> /usr/lib/dyld
+0x904ad000 - 0x904afffb  libsystem_secinit.dylib (18) <3CBA3BD3-8BA2-358D-BD1A-A1C3DF5D84E6> /usr/lib/system/libsystem_secinit.dylib
+0x9060e000 - 0x90641fe3  libsystem_m.dylib (3086.1) <951F633F-57B7-398B-912F-F6ED4DB1C597> /usr/lib/system/libsystem_m.dylib
+0x90894000 - 0x90895fff  libSystem.B.dylib (1213) <77FA0B3F-4412-31F6-A798-21D068AE16C3> /usr/lib/libSystem.B.dylib
+0x90990000 - 0x90990fff  libunc.dylib (29) <CE960997-9D4A-3848-BAC7-B2255E6765FD> /usr/lib/system/libunc.dylib
+0x90a6e000 - 0x90a97ff7  libsystem_info.dylib (459) <4F7A7111-7F0D-3891-9DC9-41F5D79949FE> /usr/lib/system/libsystem_info.dylib
+0x913e2000 - 0x913eafff  libsystem_pthread.dylib (105.1.4) <D90BD4F4-8DFA-3683-9C26-313D2F4F8C41> /usr/lib/system/libsystem_pthread.dylib
+0x91478000 - 0x9147aff7  libsystem_sandbox.dylib (358.1.1) <12A90EA1-A218-3B6B-A441-E1A8F866FA44> /usr/lib/system/libsystem_sandbox.dylib
+0x9181e000 - 0x91820fff  libquarantine.dylib (76) <9ADD861F-A66E-3AD1-A77E-C622E91BD203> /usr/lib/system/libquarantine.dylib
+0x91821000 - 0x91826ff7  libmacho.dylib (862) <48DE74F8-09E3-344F-A82F-665083A3BF8F> /usr/lib/system/libmacho.dylib
+0x91dba000 - 0x91dbbfff  libremovefile.dylib (35) <49DCAF7B-4466-3775-9E58-EA5D7CBA8AE0> /usr/lib/system/libremovefile.dylib
+0x91f04000 - 0x91f08ffb  libcache.dylib (69) <55501A00-AF64-3554-8F46-8D5AFEDEC332> /usr/lib/system/libcache.dylib
+0x91f09000 - 0x91f72ff7  libcorecrypto.dylib (233.1.2) <F188C1A7-E88F-3EC5-A6AA-22C02E3F0C93> /usr/lib/system/libcorecrypto.dylib
+0x921da000 - 0x92200ffb  libxpc.dylib (559.1.22) <CB6B442F-8BE4-37B6-9A00-4753BC1C368C> /usr/lib/system/libxpc.dylib
+0x92201000 - 0x9220aff7  libsystem_notify.dylib (133.1.1) <B8503E99-214B-3AC3-A7CA-CC837ABD7B25> /usr/lib/system/libsystem_notify.dylib
+0x92641000 - 0x92668fff  libdispatch.dylib (442.1.4) <B26A176C-39F7-3362-B128-27B1211068B9> /usr/lib/system/libdispatch.dylib
+0x93157000 - 0x9315cff7  libcompiler_rt.dylib (35) <6630682F-AB76-3E55-BE51-0A3E61B6CFC2> /usr/lib/system/libcompiler_rt.dylib
+0x9315d000 - 0x93165fff  libsystem_dnssd.dylib (561.1.1) <45CDAF46-03DE-33DB-A627-14F245993EF2> /usr/lib/system/libsystem_dnssd.dylib
+0x957e1000 - 0x957eafff  libcopyfile.dylib (118.1.2) <FAF3268F-C580-33D3-A5B4-74B8A8713216> /usr/lib/system/libcopyfile.dylib
+0x95cf8000 - 0x95d04ff3  libcommonCrypto.dylib (60061) <024B3913-15C6-3005-9E5A-EB24918F6977> /usr/lib/system/libcommonCrypto.dylib
+0x95d05000 - 0x95d0bff3  libsystem_platform.dylib (63) <509993B7-3F26-3360-B899-0BBB15152516> /usr/lib/system/libsystem_platform.dylib
+0x972c3000 - 0x972c5fff  libsystem_coreservices.dylib (9) <20E66A47-8D67-344A-A393-73926F0E5FB2> /usr/lib/system/libsystem_coreservices.dylib
+0x97392000 - 0x973a9fff  libsystem_asl.dylib (267) <85BD88AD-618E-3325-AC31-10DBAB8E9AF3> /usr/lib/system/libsystem_asl.dylib
+0x97650000 - 0x97650fff  libkeymgr.dylib (28) <06DDCEF8-EB84-3F68-9E19-FD1A12B764FD> /usr/lib/system/libkeymgr.dylib
+0x98d56000 - 0x98d5cff7  libsystem_networkextension.dylib (167.1.10) <FC20E3AD-A53D-3346-AC71-829E82832AE8> /usr/lib/system/libsystem_networkextension.dylib
+0x9a28b000 - 0x9a28bfff  liblaunch.dylib (559.1.22) <2FDDB7A5-C022-3C40-A263-1DC74F0B446D> /usr/lib/system/liblaunch.dylib
+0x9a292000 - 0x9a299ff3  libunwind.dylib (35.3) <29D9343F-9A0A-3535-B0AE-E7CC761D95EE> /usr/lib/system/libunwind.dylib
+0x9a42f000 - 0x9a46cff7  libsystem_network.dylib (411) <4D5BCDE3-5155-3D97-84C5-778D56A5122A> /usr/lib/system/libsystem_network.dylib
+0x9a692000 - 0x9a6abfff  libsystem_malloc.dylib (53.1.1) <58CD8BC7-55D1-3862-8E5D-728EE2EBE447> /usr/lib/system/libsystem_malloc.dylib
+0x9a6ac000 - 0x9a6adfff  libsystem_blocks.dylib (65) <5D98F022-E863-31D4-8ADE-D53B2AE0D331> /usr/lib/system/libsystem_blocks.dylib
+0x9ad95000 - 0x9ad98fff  libdyld.dylib (353.2.1) <6533C0BC-6FE5-3E43-A44D-EF2193978EC0> /usr/lib/system/libdyld.dylib
+0x9ae79000 - 0x9ae8aff3  libsystem_coretls.dylib (35.1.2) <87AE2CBB-A397-3392-A152-02AEA6D194D6> /usr/lib/system/libsystem_coretls.dylib
+0x9b852000 - 0x9b854fff  libsystem_configuration.dylib (699.1.5) <CDD8D1DA-3414-3A19-B340-EA116D52EA21> /usr/lib/system/libsystem_configuration.dylib
+0x9bdb7000 - 0x9be4cff3  libsystem_c.dylib (1044.1.2) <819FD4E2-3B29-38F0-AC5C-BEE865489F5F> /usr/lib/system/libsystem_c.dylib
+0x9c038000 - 0x9c03eff7  libsystem_trace.dylib (72.1.3) <E1985F9C-78FC-3098-8683-81F0DCEE54BB> /usr/lib/system/libsystem_trace.dylib
+0x9c03f000 - 0x9c05efff  libsystem_kernel.dylib (2782.1.97) <9F86CA37-93FC-31F0-8ACC-53D244AF9EC2> /usr/lib/system/libsystem_kernel.dylib
+
+External Modification Summary:
+  Calls made by other processes targeting this process:
+    task_for_pid: 0
+    thread_create: 0
+    thread_set_state: 0
+  Calls made by this process:
+    task_for_pid: 0
+    thread_create: 0
+    thread_set_state: 0
+  Calls made by all processes on this machine:
+    task_for_pid: 13513
+    thread_create: 9
+    thread_set_state: 18
+
+VM Region Summary:
+ReadOnly portion of Libraries: Total=43.9M resident=9768K(22%) swapped_out_or_unallocated=34.4M(78%)
+Writable regions: Total=26.5M written=92K(0%) resident=144K(1%) swapped_out=0K(0%) unallocated=26.4M(99%)
+ 
+REGION TYPE                      VIRTUAL
+===========                      =======
+Kernel Alloc Once                     4K
+MALLOC                             18.4M
+MALLOC (admin)                       16K
+Stack                              64.0M
+VM_ALLOCATE                           8K
+__DATA                              404K
+__IMPORT                              4K
+__LINKEDIT                         40.9M
+__OBJC                                4K
+__TEXT                             3092K
+mapped file                       210.1M
+shared memory                         4K
+===========                      =======
+TOTAL                             336.8M
+
+
+System Profile:
+AirPort: spairport_wireless_card_type_airport_extreme (0x14E4, 0xF5), Broadcom BCM43xx 1.0 (7.15.124.12.8)
+Bluetooth: Version 4.3.0f10 14890, 3 services, 27 devices, 3 incoming serial ports
+Thunderbolt Bus: MacBook Pro, Apple Inc., 25.1
+Memory Module: BANK 0/DIMM0, 2 GB, DDR3, 1600 MHz, 0x80CE, 0x4D34373142353737334448302D434B302020
+Memory Module: BANK 1/DIMM0, 2 GB, DDR3, 1600 MHz, 0x80CE, 0x4D34373142353737334448302D434B302020
+USB Device: Hub
+USB Device: Hub
+USB Device: BRCM20702 Hub
+USB Device: Bluetooth USB Host Controller
+USB Device: Apple Internal Keyboard / Trackpad
+USB Device: IR Receiver
+USB Device: Hub
+USB Device: FaceTime HD Camera (Built-in)
+Serial ATA Device: TOSHIBA MK5065GSXF, 500.11 GB
+Serial ATA Device: MATSHITADVD-R   UJ-8A8
+Model: MacBookPro9,2, BootROM MBP91.00D3.B08, 2 processors, Intel Core i5, 2.5 GHz, 4 GB, SMC 2.2f44
+Network Service: Wi-Fi, AirPort, en1
+Graphics: Intel HD Graphics 4000, Intel HD Graphics 4000, Built-In
+ 
